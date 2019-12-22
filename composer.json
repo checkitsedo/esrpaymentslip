@@ -20,9 +20,6 @@
 	},
 	"extra": {
 		"laravel": {
-			"providers": [
-				"Checkitsedo\\Esrpaymentslip\\EsrpaymentslipServiceProvider"
-			],
 			"aliases": {
 				"EsrpaymentslipHelper": "Checkitsedo\\Esrpaymentslip\\Helpers\\EsrpaymentslipHelper"
 			}
