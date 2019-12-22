@@ -34,5 +34,9 @@ class EsrpaymentslipServiceProvider extends ServiceProvider
 		$this->publishes([
 			__DIR__.'/public/images' => public_path('checkitsedo/images'),
 		], 'public');
+		
+		$this->publishes([
+			__DIR__.'/public/css' => public_path('checkitsedo/css'),
+		], 'public');
     }
 }
