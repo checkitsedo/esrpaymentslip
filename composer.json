@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "apphostbd/laravel-fpdf": "^1.0"
+        "apphostbd/laravel-fpdf": "^1.0",
+		"laravel/ui": "^1.1"
     },
 	"autoload": {
 		"psr-4": {
