@@ -1,7 +1,7 @@
 {
     "name": "checkitsedo/esrpaymentslip",
     "description": "Creates Swiss ESR Payment Slips (with Laravel)",
-    "type": "library",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
