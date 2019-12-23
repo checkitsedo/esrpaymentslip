@@ -1,11 +1,16 @@
 <?php
-//packages/chceckitsedo/esrpaymentslip/src/Helpers/EsrpaymentslipHelper.php
+
 namespace Checkitsedo\Esrpaymentslip\Helpers;
 
 use Illuminate\Support\Facades\DB;
 
 class EsrpaymentslipHelper
 {
+	/**
+	 * Convert invoice number from alpha-numeric to numeric (A=1, B=2, C=3, ...)
+	 * @param string $text
+	 * @return bool
+	 */
 	public static function calculateReference($text)
 	{
 		$invoiceNumber = $text;

@@ -5,13 +5,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "John Doe",
-            "email": "john@doe.com"
+            "name": "checkitsedo",
+            "email": "checkitsedo@mail.com"
         }
     ],
     "minimum-stability": "stable",
     "require": {
-        "apphostbd/laravel-fpdf": "^1.0",
+        "checkitsedo/laravel-fpdf": "^1.0",
 		"laravel/ui": "^1.1"
     },
 	"autoload": {

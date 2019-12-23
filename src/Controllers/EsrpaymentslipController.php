@@ -2,11 +2,11 @@
 
 namespace Checkitsedo\Esrpaymentslip\Controllers;
 
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Checkitsedo\Esrpaymentslip\Esrpaymentslip;
-use EsrpaymentslipHelper;
 use Checkitsedo\Esrpaymentslip\Pdf\Download;
+use EsrpaymentslipHelper;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class EsrpaymentslipController extends Controller
 {
@@ -78,7 +78,7 @@ class EsrpaymentslipController extends Controller
 	/**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Esrpaymentslip  $esrpaymentslip
+     * @param  \Checkitsedo\Esrpaymentslip  $esrpaymentslip
      * @return \Illuminate\Http\Response
      */
     public function edit(Esrpaymentslip $esrpaymentslip, $id)
@@ -91,7 +91,7 @@ class EsrpaymentslipController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Esrpaymentslip  $esrpaymentslip
+     * @param  \Checkitsedo\Esrpaymentslip  $esrpaymentslip
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -141,7 +141,7 @@ class EsrpaymentslipController extends Controller
 	/**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Esrpaymentslip  $esrpaymentslip
+     * @param  \Checkitsedo\Esrpaymentslip  $esrpaymentslip
      * @return \Illuminate\Http\Response
      */
     public function destroy(Esrpaymentslip $esrpaymentslip, $id)
@@ -153,6 +153,12 @@ class EsrpaymentslipController extends Controller
                         ->with('success','ESR Payment Slip deleted successfully');
     }
 	
+	/**
+     * Download the specified resource as PDF-File.
+     *
+     * @param  \Checkitsedo\Esrpaymentslip  $esrpaymentslip
+     * @return \Illuminate\Http\Response
+     */
 	public function download($id)
 	{
 		$esrpaymentslip = Esrpaymentslip::find($id);
